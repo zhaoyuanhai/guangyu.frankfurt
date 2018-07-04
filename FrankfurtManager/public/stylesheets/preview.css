@@ -1,0 +1,11 @@
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #DDD;
+}
+
+img{
+    max-width:100% !important;
+}

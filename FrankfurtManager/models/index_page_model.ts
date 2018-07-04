@@ -1,0 +1,12 @@
+export default {
+    //link
+    url: String,
+    //Õº∆¨¬∑æ∂
+    imgPath: String,
+    //”Ô—‘
+    language: Number,
+    //µº∫Ωid
+    menuId: Object,
+    //Œª÷√ 1,2,3,4,
+    range: Number
+}

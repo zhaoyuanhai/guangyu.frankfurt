@@ -1,0 +1,18 @@
+{
+  "name": "frankfurtproj",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.3",
+    "layer": "^0.1.0",
+    "log4js": "^1.1.1",
+    "mongoose": "^4.9.7",
+    "pug": "^2.0.0-rc.1"
+  }
+}

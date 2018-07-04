@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>FrankfurtProj</Name>
+    <RootNamespace>FrankfurtProj</RootNamespace>
+    <NameOfLastUsedPublishProfile>frankfurt</NameOfLastUsedPublishProfile>
+    <LaunchUrl>
+    </LaunchUrl>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>03e30ae5-1f1d-4ffe-a996-0ae1251c1317</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="dal.ts" />
+    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="models\index.ts" />
+    <TypeScriptCompile Include="models\index_page_model.ts" />
+    <TypeScriptCompile Include="models\language_model.ts" />
+    <TypeScriptCompile Include="models\menu_model.ts" />
+    <TypeScriptCompile Include="models\type_model.ts" />
+    <TypeScriptCompile Include="models\user_model.ts" />
+    <TypeScriptCompile Include="routes\index.ts" />
+    <TypeScriptCompile Include="routes\user.ts" />
+    <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mongoose\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <None Include="frankfurt.pubxml" />
+    <Content Include="package.json" />
+    <Content Include="public\images\banner1.jpg" />
+    <Content Include="public\images\banner2.jpg" />
+    <Content Include="public\images\banner3.jpg" />
+    <Content Include="public\images\banner4.jpg" />
+    <Content Include="public\images\left-bic.jpg" />
+    <Content Include="public\images\nav-logo.png" />
+    <Content Include="public\images\比例图\Thumbs.db" />
+    <Content Include="public\images\比例图\首页效果图.jpg" />
+    <Content Include="public\images\比例图\（部分）泵的详细页.jpg" />
+    <Content Include="public\images\比例图\（部分）海水淡化的详细页.jpg" />
+    <Content Include="public\images\lan-btn.png" />
+    <Content Include="public\javascripts\layer\mobile\need\layer.css" />
+    <Content Include="public\javascripts\layer\skin\default\icon-ext.png" />
+    <Content Include="public\javascripts\layer\skin\default\icon.png" />
+    <Content Include="public\javascripts\layer\skin\default\layer.css" />
+    <Content Include="public\javascripts\layer\skin\default\loading-0.gif" />
+    <Content Include="public\javascripts\layer\skin\default\loading-1.gif" />
+    <Content Include="public\javascripts\layer\skin\default\loading-2.gif" />
+    <Content Include="public\stylesheets\desc.css" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="public\stylesheets\preview.css" />
+    <Content Include="README.md" />
+    <Content Include="typings\globals\mongoose\typings.json" />
+    <Content Include="views\about.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\error.pug" />
+    <Content Include="views\types.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\index.pug" />
+    <Content Include="views\layout.pug" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+    <Content Include="bin\ChangeConfig.ps1" />
+    <Content Include="bin\download.ps1" />
+    <Content Include="bin\setup_web.cmd" />
+    <Content Include="bin\node.cmd" />
+    <Content Include="bin\www" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="models\" />
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\images\比例图\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\javascripts\layer\" />
+    <Folder Include="public\javascripts\layer\mobile\" />
+    <Folder Include="public\javascripts\layer\mobile\need\" />
+    <Folder Include="public\javascripts\layer\skin\" />
+    <Folder Include="public\javascripts\layer\skin\default\" />
+    <Folder Include="public\javascripts\log\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Scripts\typings\" />
+    <Folder Include="Scripts\typings\node\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\mongoose\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="public\javascripts\jquery.min.js" />
+    <Compile Include="public\javascripts\jqueryold.min.js" />
+    <Compile Include="public\javascripts\layer\layer.js" />
+    <Compile Include="public\javascripts\layer\mobile\layer.js" />
+    <Compile Include="public\javascripts\log\log.js" />
+    <Compile Include="public\javascripts\main.js" />
+    <None Include="public\javascripts\_references.js" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

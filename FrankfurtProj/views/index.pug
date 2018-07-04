@@ -1,0 +1,26 @@
+﻿extends layout
+
+block content
+  a
+  - var objs = {}
+  each data in datas
+    - objs[data.range] = data
+  - objs['1'] = objs['1']||{}
+  - objs['2'] = objs['2']||{}
+  - objs['3'] = objs['3']||{}
+  - objs['4'] = objs['4']||{}
+  .f-right
+    .f-row
+      .f-one
+        a(href=objs['1'].menuId ? `/about?id=${objs['1'].menuId}` : '#',style="color:#f1f1f1") 
+          img(src=objs['1'].imgPath)
+      .f-tow
+        a(href=objs['2'].menuId ? `/types?id=${objs['2'].menuId}` : '#',style="color:#f1f1f1")
+          img(src=objs['2'].imgPath)
+    .f-row
+      .f-three
+        a(href=objs['3'].menuId ? `/types?id=${objs['3'].menuId}` : '#',style="color:#f1f1f1")
+          img(src=objs['3'].imgPath)
+      .f-four
+        a(href=objs['4'].menuId ? `/types?id=${objs['4'].menuId}` : '#',style="color:#f1f1f1")
+          img(src=objs['4'].imgPath)

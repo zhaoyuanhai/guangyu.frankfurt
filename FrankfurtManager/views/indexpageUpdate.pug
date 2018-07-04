@@ -1,0 +1,21 @@
+﻿extends layout
+
+block head
+
+block content
+  .container
+    h1 修改首页图片
+    form#imageForm(enctype="multipart/form-data" action="/indexpage/update" method="POST")
+      .form-group
+        label(for="name") 链接类型
+        select.form-control(name="menuId")
+          option(value="#") 无
+          each menu in menus
+            - var sel = menu._id.toString() == data.menuId && data.menuId.toString()
+            option(value=menu._id selected=sel) #{menu.name}
+      .form-group
+        label(for="name") 上传的图片
+        input.form-control(type="file" name="imgPath")
+      .form-group
+        input(type="hidden" name="id" value=data._id)
+        button.btn.btn-info(type="submit") 上传

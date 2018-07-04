@@ -1,0 +1,18 @@
+﻿html
+  head
+    mate(charset="uft-8")
+    link(href="/css/style.min.css-v=4.0.0.css" rel="stylesheet")
+  body
+    form(action="/login" method="post")
+      h1(style="margin-top: 150px;") 用户登陆
+      ui
+        li
+          lable 用户名 : 
+          input(type="text" name="uid")
+        li
+          lable 密&nbsp;&nbsp;&nbsp;码 : 
+          input(type="text" name="pwd")
+        li
+          lable(style="color:red") #{msg}
+        li
+          input.but100(type="submit" value="登录")

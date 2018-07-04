@@ -1,0 +1,18 @@
+﻿extends layout
+
+block head
+  link(rel="stylesheet" href="/stylesheets/desc.css")
+
+block content
+  .f-right
+    .f-head
+      ul(class=`line-${Math.ceil(datas.length/3.0)}`)
+        each type in datas
+          li 
+            a.types(href=type.url data-id=type._id) #{type.name}
+    .f-body
+      .f-content
+        .ctt#content
+      .f-image
+        img#imgPath
+  script(src="/javascripts/alt.js")

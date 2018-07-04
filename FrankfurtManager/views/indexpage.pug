@@ -1,0 +1,16 @@
+﻿extends layout
+
+block head
+  link(rel="stylesheet" href="/css/indexpage.css")
+  script(src="/js/indexpage.js")
+
+block content
+  .container
+    h1 首页图列表
+    ul.list
+      each item in data
+        li
+          span #{item.range}
+          img(src=item.imgPath)
+          a.btn.btn-info(href="/indexpage/update?id=" + item._id) 修改 
+          

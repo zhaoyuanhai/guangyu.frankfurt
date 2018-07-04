@@ -1,0 +1,32 @@
+﻿doctype html
+html
+  head
+    title conseptec
+    meta(http-equiv="X-UA-Compatible" content="chrome=1,IE=Edge" )
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/stylesheets/main.css")
+    link(rel="stylesheet" href="/javascripts/layer/skin/default/layer.css")
+    link(rel="stylesheet" href="/stylesheets/preview.css")
+    script(src="/javascripts/jquery.min.js")
+    script(src="/javascripts/layer/layer.js")
+    script(src="/javascripts/main.js")
+    block head
+  body(style="overflow-y:hidden;")
+    .container
+      .f-left
+        .f-logo
+          a(href="/index")
+            img(src="/images/nav-logo.png" style="border:0px;")
+        nav.f-nav
+          ul
+            li 
+              a(href="/index") Home Page
+            each item in menus
+              li 
+                a(href=item.url+'?id='+item._id) #{item.name}
+        .f-btn
+          a
+            img(src="/images/lan-btn.png")
+            span#lan(data-language=language==2?1:2) #{language==1?'Deutsch':'English'}
+      block content

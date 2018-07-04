@@ -1,0 +1,76 @@
+.f-head {
+    height: 100px;
+    width: 100%;
+    background-color: #789477;
+}
+
+    .f-head ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+        .f-head ul > li {
+            color: white;
+            float: left;
+            width: 27%;
+            text-align: center;
+			margin-left:15px;
+        }
+
+        .f-head ul.line-1 > li {
+            margin-top: 40px;
+        }
+
+        .f-head ul.line-2 > li {
+            margin-top: 21px;
+        }
+
+        .f-head ul.line-3 > li {
+            margin-top: 12px;
+        }
+
+        .f-head ul > li a {
+            cursor: pointer;
+			width:80%;
+        }
+
+            .f-head ul > li a.active {
+                color: yellow;
+            }
+
+.f-content, .f-image {
+    height: 100%;
+    float: left;
+}
+
+.f-body {
+    width: 100%;
+	overflow-y:hidden;
+}
+
+    .f-body .f-content {
+        background-color: #505050;
+        overflow-y: scroll;		
+        height: 100%;
+    }
+
+        .f-body .f-content .ctt {
+            margin: 0 50px;
+        }
+
+        .f-body .f-content img {
+            max-width: 100%;
+        }
+
+    .f-body .f-image {
+        width: 400px;
+    }
+
+        .f-body .f-image img {
+            max-width: 99%;
+            max-height: 98%;
+			height:100%;
+			width:104%;
+        }

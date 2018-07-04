@@ -1,0 +1,30 @@
+﻿extends layout
+
+block head
+  script(src="/js/jquery.min.js")
+  script(src="/js/typelist.js")
+block content
+  .container
+    header
+      h1 类型管理
+    .tools.clearfix(style="padding-bottom:10px")
+      a.btn.btn-info.pull-right(href="/module/addtype?typeid=" + typeid) 添加
+    table.table
+      thead
+        tr
+          td 名称
+          td 图片
+          td 语言
+          td 操作
+      tbody
+        each data in datas
+          tr
+            td= data.name
+            td= data.imgPath
+            td()= data.language==1?'English':'German'
+            td() 
+              a(target="_blank" href=`/preview?id=${data._id}`) 预览
+              span &nbsp;|&nbsp;
+              a(href=`/module/modtype?id=${data._id}`) 编辑
+              span &nbsp;|&nbsp;
+              a.deltype(href=`/module/deltype?id=${data._id}&typeid=${typeid}`) 删除

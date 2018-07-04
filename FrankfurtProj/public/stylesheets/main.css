@@ -1,0 +1,136 @@
+﻿html, body {
+    padding: 0;
+    margin: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    height: 100%;
+    background-color:#f1f1f1;
+}
+
+.container {
+    height: 100%;
+    min-height: 640px;
+    width: 100%;
+    min-width: 1000px;
+}
+
+.f-left, .f-right {
+    float: left;
+}
+
+.f-left {
+    width: 220px;
+    height: 100%;
+    background-image: url(/images/left-bic.jpg);
+    background-size: cover;
+}
+
+.f-logo {
+    width: 200px;
+    margin: 40px auto 100px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+    .f-logo img {
+        width: 100%;
+    }
+
+.f-right {
+    height: 100%;
+}
+
+.f-row {
+    height: 50%;
+    width: 100%;
+}
+
+    .f-row img {
+        width: 100%;
+        height: 100%;
+    }
+
+.f-one, .f-tow, .f-three, .f-four {
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    border: 10px solid #f1f1f1;
+}
+
+.f-one {
+    width: 65%;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+}
+
+.f-tow {
+    width: 35%;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+}
+
+.f-three {
+    width: 50%;
+    border-top-width: 5px;
+    border-right-width: 5px;
+}
+
+.f-four {
+    width: 50%;
+    border-top-width: 5px;
+    border-left-width: 5px;
+}
+
+.f-nav a {
+    text-decoration: none;
+}
+
+    .f-nav a:link {
+        color: white;
+    }
+
+    .f-nav a:visited {
+        color: white;
+    }
+
+    .f-nav a.active {
+        color: yellow;
+    }
+
+.f-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .f-nav ul li {
+        text-align: center;
+        color: white;
+        line-height: 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+.f-btn {
+    margin: 150px auto 0px;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+    .f-btn img {
+        height: 100%;
+    }
+
+    .f-btn a {
+        position: relative;
+    }
+
+    .f-btn span {
+        position: absolute;
+        width: 124.5px;
+        left: 0;
+        line-height: 30px;
+        color: white;
+        cursor: pointer;
+    }
